@@ -22,16 +22,28 @@ Total number of notes, including both pitched and unpitched notes.
 Standard deviation of the MIDI pitches of all pitched notes in the piece. Provides a measure of how close the pitches 
 as a whole are to the mean pitch.
 
+||→More pitch variability→||
+|:-:|:-:|:-:|
+|<img src="figs/single_attribute/Pitch_Variability/ours/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/single_attribute/Pitch_Variability/ours/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/single_attribute/Pitch_Variability/ours/reels_simple_chords_418.mid_2_0_Pitch_Variability_-0.17049.png"><br><audio controls><source src="mp3/single_attribute/Pitch_Variability/ours/reels_simple_chords_418.mid_2_0_Pitch_Variability_-0.17049.mp3"></audio>|<img src="figs/single_attribute/Pitch_Variability/ours/reels_simple_chords_418.mid_2_0_Pitch_Variability_0.82951.png"><br><audio controls><source src="mp3/single_attribute/Pitch_Variability/ours/reels_simple_chords_418.mid_2_0_Pitch_Variability_0.82951.mp3"></audio>|
+
 ## Rhythmic value variability
 Standard deviation of the note durations in quarter notes of all notes in the music. Provides a measure of how close the 
 rhythmic values are to the mean rhythmic value. This calculation includes both pitched and unpitched notes, is 
 calculated after rhythmic quantization, is not influenced by tempo, and is calculated without regard to the dynamics, 
 voice or instrument of any given note.
 
+||→More rhythmic value variability→||
+|:-:|:-:|:-:|
+|<img src="figs/single_attribute/Rhythmic_Value_Variability/ours/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/single_attribute/Rhythmic_Value_Variability/ours/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/single_attribute/Rhythmic_Value_Variability/ours/reels_simple_chords_418.mid_2_0_Rhythmic_Value_Variability_-0.26632.png"><br><audio controls><source src="mp3/single_attribute/Rhythmic_Value_Variability/ours/reels_simple_chords_418.mid_2_0_Rhythmic_Value_Variability_-0.26632.mp3"></audio>|<img src="figs/single_attribute/Rhythmic_Value_Variability/ours/reels_simple_chords_418.mid_2_0_Rhythmic_Value_Variability_0.73368.png"><br><audio controls><source src="mp3/single_attribute/Rhythmic_Value_Variability/ours/reels_simple_chords_418.mid_2_0_Rhythmic_Value_Variability_0.73368.mp3"></audio>|
+
 ## Pitch kurtosis
 Kurtosis of the MIDI pitches of all pitched notes in the piece. Provides a measure of how peaked or flat the pitch 
 distribution is. The higher the kurtosis, the more the pitches are clustered near the mean and the fewer outliers there 
 are.
+
+||→Less pitch kurtosis→||
+|:-:|:-:|:-:|
+|<img src="figs/single_attribute/Pitch_Kurtosis/ours/reels_simple_chords_418.mid_2_0.png"><br><img src="figs/single_attribute/Pitch_Kurtosis/ours/reels_simple_chords_418.mid_2_0_hist.png"><br><audio controls><source src="mp3/single_attribute/Pitch_Kurtosis/ours/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/single_attribute/Pitch_Kurtosis/ours/reels_simple_chords_418.mid_2_0_Pitch_Kurtosis_-0.7998.png"><br><img src="figs/single_attribute/Pitch_Kurtosis/ours/reels_simple_chords_418.mid_2_0_Pitch_Kurtosis_-0.7998_hist.png"><br><audio controls><source src="mp3/single_attribute/Pitch_Kurtosis/ours/reels_simple_chords_418.mid_2_0_Pitch_Kurtosis_-0.7998.mp3"></audio>|<img src="figs/single_attribute/Pitch_Kurtosis/ours/reels_simple_chords_418.mid_2_0_Pitch_Kurtosis_-2.2998.png"><br><img src="figs/single_attribute/Pitch_Kurtosis/ours/reels_simple_chords_418.mid_2_0_Pitch_Kurtosis_-2.2998_hist.png"><br><audio controls><source src="mp3/single_attribute/Pitch_Kurtosis/ours/reels_simple_chords_418.mid_2_0_Pitch_Kurtosis_-2.2998.mp3"></audio>|
 
 ##  Pitch skewness
 Skewness of the MIDI pitches of all pitched notes in the piece. Provides a measure of how asymmetrical the pitch 

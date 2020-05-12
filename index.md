@@ -14,6 +14,10 @@ explanations from the official [webpage](http://jmir.sourceforge.net/manuals/jSy
 ## Total number of notes
 Total number of notes, including both pitched and unpitched notes.
 
+||→Less total number of notes→||
+|:-:|:-:|:-:|
+|<img src="figs/single_attribute/Total_Number_of_Notes/ours/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/single_attribute/Total_Number_of_Notes/ours/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/single_attribute/Total_Number_of_Notes/ours/reels_simple_chords_418.mid_2_0_Total_Number_of_Notes_-0.17558.png"><br><audio controls><source src="mp3/single_attribute/Total_Number_of_Notes/ours/reels_simple_chords_418.mid_2_0_Total_Number_of_Notes_-0.17558.mp3"></audio>|<img src="figs/single_attribute/Total_Number_of_Notes/ours/reels_simple_chords_418.mid_2_0_Total_Number_of_Notes_-0.67558.png"><br><audio controls><source src="mp3/single_attribute/Total_Number_of_Notes/ours/reels_simple_chords_418.mid_2_0_Total_Number_of_Notes_-0.67558.mp3"></audio>|
+
 ## Pitch variability
 Standard deviation of the MIDI pitches of all pitched notes in the piece. Provides a measure of how close the pitches 
 as a whole are to the mean pitch.

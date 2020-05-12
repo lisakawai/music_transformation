@@ -70,9 +70,10 @@ This "chord" may consist of any number of pitch classes, even only one. A "chord
 split by one or more rests (although the rests themselves are not counted in the duration of the "chord").
 
 # Double attributes
-In this section, two attributes are trained at the same time.
+In this section, two attributes are trained at the same time. The original data is shown at the top-left in each setting.
 
 ## Total number of notes & pitch variability
+The model can control the total number of notes and pitch variability at the same time.
 
 |↓Less total number of notes↓|→More pitch variability→||
 |:-:|:-:|:-:|
@@ -81,6 +82,7 @@ In this section, two attributes are trained at the same time.
 |<img src="figs/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Pitch_Variability_-1.1705.png"><br><audio controls><source src="mp3/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Pitch_Variability_-1.1705.mp3"></audio>|<img src="figs/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Pitch_Variability_-0.17049.png"><br><audio controls><source src="mp3/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Pitch_Variability_-0.17049.mp3"></audio>|<img src="figs/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Pitch_Variability_0.82951.png"><br><audio controls><source src="mp3/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Pitch_Variability_0.82951.mp3"></audio>|
 
 ## Total number of notes & rhythmic value variability
+When the model tries to increase rhythmic value variability while keeping the total number of notes, it adds longer and shorter notes at the same time to use larger variety of note lengths.
 
 |↓Less total number of notes↓|→More rhythmic value variability→||
 |:-:|:-:|:-:|
@@ -99,7 +101,13 @@ Semitone melodic intervals are shown in red. Compared to the total number of not
 
 ## Pitch variability & rhythmic value variability
 
-## Pitch Variability & chromatic motion
+|↓More pitch variability↓|→More rhythmic value variability→||
+|:-:|:-:|:-:|
+|<img src="figs/pitch_rhythm/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/pitch_rhythm/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-1.1705_Rhythmic_Value_Variability_-0.26632.png"><br><audio controls><source src="mp3/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-1.1705_Rhythmic_Value_Variability_-0.26632.mp3"></audio>|<img src="figs/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-1.1705_Rhythmic_Value_Variability_0.73368.png"><br><audio controls><source src="mp3/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-1.1705_Rhythmic_Value_Variability_0.73368.mp3"></audio>|
+|<img src="figs/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-0.17049_Rhythmic_Value_Variability_-1.2663.png"><br><audio controls><source src="mp3/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-0.17049_Rhythmic_Value_Variability_-1.2663.mp3"></audio>|<img src="figs/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-0.17049_Rhythmic_Value_Variability_-0.26632.png"><br><audio controls><source src="mp3/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-0.17049_Rhythmic_Value_Variability_-0.26632.mp3"></audio>|<img src="figs/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-0.17049_Rhythmic_Value_Variability_0.73368.png"><br><audio controls><source src="mp3/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-0.17049_Rhythmic_Value_Variability_0.73368.mp3"></audio>|
+|<img src="figs/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Rhythmic_Value_Variability_-1.2663.png"><br><audio controls><source src="mp3/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Rhythmic_Value_Variability_-1.2663.mp3"></audio>|<img src="figs/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Rhythmic_Value_Variability_-0.26632.png"><br><audio controls><source src="mp3/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Rhythmic_Value_Variability_-0.26632.mp3"></audio>|<img src="figs/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Rhythmic_Value_Variability_0.73368.png"><br><audio controls><source src="mp3/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Rhythmic_Value_Variability_0.73368.mp3"></audio>|
+
+## Pitch variability & chromatic motion
 
 ## Rhythmic value variability & chromatic motion
 

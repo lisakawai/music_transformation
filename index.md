@@ -133,7 +133,7 @@ The results indicate that the model is successfully change the ratio of directio
 
 ## Average interval spanned by melodic arcs
 Average melodic interval (in semitones) separating the top note of melodic peaks and the bottom note of adjacent melodic 
-troughs. Similar assumptions are made in the calculation of this feature as for the Melodic Interval Histogram.
+troughs. 
 
 ||→Increase melodic arcs interval span→||
 |:-:|:-:|:-:|
@@ -213,6 +213,8 @@ Successive notes whose interval is semitone, which correpond to chromatic motion
 In this section, three attributes are trained at the same time.
 
 ## Total number of notes, pitch variability & rhythmic value variability
+
+Our proposed model is able to control three attributes indivisually.
 
 |Default total number of notes|||
 |:-:|:-:|:-:|

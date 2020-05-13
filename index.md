@@ -14,7 +14,7 @@ explanations from the official [webpage](http://jmir.sourceforge.net/manuals/jSy
 ## Total number of notes
 Total number of notes, including both pitched and unpitched notes.
 
-||→Less total number of notes→||
+||→Increase total number of notes→||
 |:-:|:-:|:-:|
 |<img src="figs/single_attribute/Total_Number_of_Notes/ours/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/single_attribute/Total_Number_of_Notes/ours/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/single_attribute/Total_Number_of_Notes/ours/reels_simple_chords_418.mid_2_0_Total_Number_of_Notes_-0.17558.png"><br><audio controls><source src="mp3/single_attribute/Total_Number_of_Notes/ours/reels_simple_chords_418.mid_2_0_Total_Number_of_Notes_-0.17558.mp3"></audio>|<img src="figs/single_attribute/Total_Number_of_Notes/ours/reels_simple_chords_418.mid_2_0_Total_Number_of_Notes_-0.67558.png"><br><audio controls><source src="mp3/single_attribute/Total_Number_of_Notes/ours/reels_simple_chords_418.mid_2_0_Total_Number_of_Notes_-0.67558.mp3"></audio>|
 
@@ -22,7 +22,7 @@ Total number of notes, including both pitched and unpitched notes.
 Standard deviation of the MIDI pitches of all pitched notes in the piece. Provides a measure of how close the pitches 
 as a whole are to the mean pitch.
 
-||→More pitch variability→||
+||→Increase pitch variability→||
 |:-:|:-:|:-:|
 |<img src="figs/single_attribute/Pitch_Variability/ours/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/single_attribute/Pitch_Variability/ours/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/single_attribute/Pitch_Variability/ours/reels_simple_chords_418.mid_2_0_Pitch_Variability_-0.17049.png"><br><audio controls><source src="mp3/single_attribute/Pitch_Variability/ours/reels_simple_chords_418.mid_2_0_Pitch_Variability_-0.17049.mp3"></audio>|<img src="figs/single_attribute/Pitch_Variability/ours/reels_simple_chords_418.mid_2_0_Pitch_Variability_0.82951.png"><br><audio controls><source src="mp3/single_attribute/Pitch_Variability/ours/reels_simple_chords_418.mid_2_0_Pitch_Variability_0.82951.mp3"></audio>|
 
@@ -32,7 +32,7 @@ rhythmic values are to the mean rhythmic value. This calculation includes both p
 calculated after rhythmic quantization, is not influenced by tempo, and is calculated without regard to the dynamics, 
 voice or instrument of any given note.
 
-||→More rhythmic value variability→||
+||→Increase rhythmic value variability→||
 |:-:|:-:|:-:|
 |<img src="figs/single_attribute/Rhythmic_Value_Variability/ours/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/single_attribute/Rhythmic_Value_Variability/ours/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/single_attribute/Rhythmic_Value_Variability/ours/reels_simple_chords_418.mid_2_0_Rhythmic_Value_Variability_-0.26632.png"><br><audio controls><source src="mp3/single_attribute/Rhythmic_Value_Variability/ours/reels_simple_chords_418.mid_2_0_Rhythmic_Value_Variability_-0.26632.mp3"></audio>|<img src="figs/single_attribute/Rhythmic_Value_Variability/ours/reels_simple_chords_418.mid_2_0_Rhythmic_Value_Variability_0.73368.png"><br><audio controls><source src="mp3/single_attribute/Rhythmic_Value_Variability/ours/reels_simple_chords_418.mid_2_0_Rhythmic_Value_Variability_0.73368.mp3"></audio>|
 
@@ -41,13 +41,17 @@ Kurtosis of the MIDI pitches of all pitched notes in the piece. Provides a measu
 distribution is. The higher the kurtosis, the more the pitches are clustered near the mean and the fewer outliers there 
 are.
 
-||→Less pitch kurtosis→||
+||→Decrease pitch kurtosis→||
 |:-:|:-:|:-:|
 |<img src="figs/single_attribute/Pitch_Kurtosis/ours/reels_simple_chords_418.mid_2_0.png"><br><img src="figs/single_attribute/Pitch_Kurtosis/ours/reels_simple_chords_418.mid_2_0_hist.png"><br><audio controls><source src="mp3/single_attribute/Pitch_Kurtosis/ours/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/single_attribute/Pitch_Kurtosis/ours/reels_simple_chords_418.mid_2_0_Pitch_Kurtosis_-0.7998.png"><br><img src="figs/single_attribute/Pitch_Kurtosis/ours/reels_simple_chords_418.mid_2_0_Pitch_Kurtosis_-0.7998_hist.png"><br><audio controls><source src="mp3/single_attribute/Pitch_Kurtosis/ours/reels_simple_chords_418.mid_2_0_Pitch_Kurtosis_-0.7998.mp3"></audio>|<img src="figs/single_attribute/Pitch_Kurtosis/ours/reels_simple_chords_418.mid_2_0_Pitch_Kurtosis_-2.2998.png"><br><img src="figs/single_attribute/Pitch_Kurtosis/ours/reels_simple_chords_418.mid_2_0_Pitch_Kurtosis_-2.2998_hist.png"><br><audio controls><source src="mp3/single_attribute/Pitch_Kurtosis/ours/reels_simple_chords_418.mid_2_0_Pitch_Kurtosis_-2.2998.mp3"></audio>|
 
 ##  Pitch skewness
 Skewness of the MIDI pitches of all pitched notes in the piece. Provides a measure of how asymmetrical the pitch 
 distribution is to either the left or the right of the mean pitch. A value of zero indicates no skew.
+
+||→Increase pitch skewness→||
+|:-:|:-:|:-:|
+|<img src="figs/single_attribute/Pitch_Skewness/ours/reels_simple_chords_418.mid_2_0.png"><br><img src="figs/single_attribute/Pitch_Skewness/ours/reels_simple_chords_418.mid_2_0_hist.png"><br><audio controls><source src="mp3/single_attribute/Pitch_Skewness/ours/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/single_attribute/Pitch_Skewness/ours/reels_simple_chords_418.mid_2_0_Pitch_Skewness_1.8853.png"><br><img src="figs/single_attribute/Pitch_Skewness/ours/reels_simple_chords_418.mid_2_0_Pitch_Skewness_1.8853_hist.png"><br><audio controls><source src="mp3/single_attribute/Pitch_Skewness/ours/reels_simple_chords_418.mid_2_0_Pitch_Skewness_1.8853.mp3"></audio>|<img src="figs/single_attribute/Pitch_Skewness/ours/reels_simple_chords_418.mid_2_0_Pitch_Skewness_2.8853.png"><br><img src="figs/single_attribute/Pitch_Skewness/ours/reels_simple_chords_418.mid_2_0_Pitch_Skewness_2.8853_hist.png"><br><audio controls><source src="mp3/single_attribute/Pitch_Skewness/ours/reels_simple_chords_418.mid_2_0_Pitch_Skewness_2.8853.mp3"></audio>|
 
 ## Prevalence of most common rhythmic value
 The fraction of all notes that have a rhythmic value corresponding to the most common rhythmic value in the music. 
@@ -91,7 +95,7 @@ In this section, two attributes are trained at the same time. The original data 
 ## Total number of notes & pitch variability
 The model can control the total number of notes and pitch variability at the same time.
 
-|↓Less total number of notes↓|→More pitch variability→||
+|↓Reduce total number of notes↓|→Increase pitch variability→||
 |:-:|:-:|:-:|
 |<img src="figs/double_attributes/total_pitch/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/double_attributes/total_pitch/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/double_attributes/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_1.3244_Pitch_Variability_-0.17049.png"><br><audio controls><source src="mp3/double_attributes/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_1.3244_Pitch_Variability_-0.17049.mp3"></audio>|<img src="figs/double_attributes/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_1.3244_Pitch_Variability_0.82951.png"><br><audio controls><source src="mp3/double_attributes/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_1.3244_Pitch_Variability_0.82951.mp3"></audio>|
 |<img src="figs/double_attributes/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_0.32442_Pitch_Variability_-1.1705.png"><br><audio controls><source src="mp3/double_attributes/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_0.32442_Pitch_Variability_-1.1705.mp3"></audio>|<img src="figs/double_attributes/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_0.32442_Pitch_Variability_-0.17049.png"><br><audio controls><source src="mp3/double_attributes/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_0.32442_Pitch_Variability_-0.17049.mp3"></audio>|<img src="figs/double_attributes/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_0.32442_Pitch_Variability_0.82951.png"><br><audio controls><source src="mp3/double_attributes/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_0.32442_Pitch_Variability_0.82951.mp3"></audio>|
@@ -100,7 +104,7 @@ The model can control the total number of notes and pitch variability at the sam
 ## Total number of notes & rhythmic value variability
 When the model tries to increase rhythmic value variability while keeping the total number of notes, it adds longer and shorter notes at the same time to use larger variety of note lengths.
 
-|↓Less total number of notes↓|→More rhythmic value variability→||
+|↓Reduce total number of notes↓|→Increase rhythmic value variability→||
 |:-:|:-:|:-:|
 |<img src="figs/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_1.3244_Rhythmic_Value_Variability_-0.76632.png"><br><audio controls><source src="mp3/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_1.3244_Rhythmic_Value_Variability_-0.76632.mp3"></audio>|<img src="figs/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_1.3244_Rhythmic_Value_Variability_0.73368.png"><br><audio controls><source src="mp3/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_1.3244_Rhythmic_Value_Variability_0.73368.mp3"></audio>|
 |<img src="figs/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_0.32442_Rhythmic_Value_Variability_-1.2663.png"><br><audio controls><source src="mp3/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_0.32442_Rhythmic_Value_Variability_-1.2663.mp3"></audio>|<img src="figs/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_0.32442_Rhythmic_Value_Variability_-0.76632.png"><br><audio controls><source src="mp3/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_0.32442_Rhythmic_Value_Variability_-0.76632.mp3"></audio>|<img src="figs/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_0.32442_Rhythmic_Value_Variability_0.73368.png"><br><audio controls><source src="mp3/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_0.32442_Rhythmic_Value_Variability_0.73368.mp3"></audio>|
@@ -109,7 +113,7 @@ When the model tries to increase rhythmic value variability while keeping the to
 ## Total number of notes & chromatic motion
 Semitone melodic intervals which correspond to chromatic motion are shown in red. Compared to the total number of notes or pitch variability, chromatic motion is difficult to train, but the model can control this attribute mostly.
 
-|↓Less total number of notes↓|→More chromatic motion→||
+|↓Reduce total number of notes↓|→Increase chromatic motion→||
 |:-:|:-:|:-:|
 |<img src="figs/double_attributes/total_chrom/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/double_attributes/total_chrom/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/double_attributes/total_chrom/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_1.3244_Chromatic_Motion_0.42178.png"><br><audio controls><source src="mp3/double_attributes/total_chrom/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_1.3244_Chromatic_Motion_0.42178.mp3"></audio>|<img src="figs/double_attributes/total_chrom/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_1.3244_Chromatic_Motion_1.4218.png"><br><audio controls><source src="mp3/double_attributes/total_chrom/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_1.3244_Chromatic_Motion_1.4218.mp3"></audio>|
 |<img src="figs/double_attributes/total_chrom/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_0.32442_Chromatic_Motion_-0.57822.png"><br><audio controls><source src="mp3/double_attributes/total_chrom/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_0.32442_Chromatic_Motion_-0.57822.mp3"></audio>|<img src="figs/double_attributes/total_chrom/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_0.32442_Chromatic_Motion_0.42178.png"><br><audio controls><source src="mp3/double_attributes/total_chrom/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_0.32442_Chromatic_Motion_0.42178.mp3"></audio>|<img src="figs/double_attributes/total_chrom/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_0.32442_Chromatic_Motion_1.4218.png"><br><audio controls><source src="mp3/double_attributes/total_chrom/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_0.32442_Chromatic_Motion_1.4218.mp3"></audio>|
@@ -118,7 +122,7 @@ Semitone melodic intervals which correspond to chromatic motion are shown in red
 ## Pitch variability & rhythmic value variability
 The model can control pitch variability and rhythmic value variability at the same time.
 
-|↓More pitch variability↓|→More rhythmic value variability→||
+|↓Increase pitch variability↓|→Increase rhythmic value variability→||
 |:-:|:-:|:-:|
 |<img src="figs/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-1.1705_Rhythmic_Value_Variability_-0.26632.png"><br><audio controls><source src="mp3/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-1.1705_Rhythmic_Value_Variability_-0.26632.mp3"></audio>|<img src="figs/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-1.1705_Rhythmic_Value_Variability_0.73368.png"><br><audio controls><source src="mp3/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-1.1705_Rhythmic_Value_Variability_0.73368.mp3"></audio>|
 |<img src="figs/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-0.17049_Rhythmic_Value_Variability_-1.2663.png"><br><audio controls><source src="mp3/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-0.17049_Rhythmic_Value_Variability_-1.2663.mp3"></audio>|<img src="figs/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-0.17049_Rhythmic_Value_Variability_-0.26632.png"><br><audio controls><source src="mp3/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-0.17049_Rhythmic_Value_Variability_-0.26632.mp3"></audio>|<img src="figs/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-0.17049_Rhythmic_Value_Variability_0.73368.png"><br><audio controls><source src="mp3/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-0.17049_Rhythmic_Value_Variability_0.73368.mp3"></audio>|
@@ -127,7 +131,7 @@ The model can control pitch variability and rhythmic value variability at the sa
 ## Pitch variability & chromatic motion
 Semitone melodic intervals which correpond to chromatic motion are shown in red. 
 
-|↓More pitch variability↓|→More chromatic motion→||
+|↓Increase pitch variability↓|→Increase chromatic motion→||
 |:-:|:-:|:-:|
 |<img src="figs/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-1.1705_Chromatic_Motion_0.42178.png"><br><audio controls><source src="mp3/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-1.1705_Chromatic_Motion_0.42178.mp3"></audio>|<img src="figs/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-1.1705_Chromatic_Motion_1.4218.png"><br><audio controls><source src="mp3/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-1.1705_Chromatic_Motion_1.4218.mp3"></audio>|
 |<img src="figs/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-0.17049_Chromatic_Motion_-0.57822.png"><br><audio controls><source src="mp3/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-0.17049_Chromatic_Motion_-0.57822.mp3"></audio>|<img src="figs/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-0.17049_Chromatic_Motion_0.42178.png"><br><audio controls><source src="mp3/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-0.17049_Chromatic_Motion_0.42178.mp3"></audio>|<img src="figs/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-0.17049_Chromatic_Motion_1.4218.png"><br><audio controls><source src="mp3/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_-0.17049_Chromatic_Motion_1.4218.mp3"></audio>|
@@ -136,7 +140,7 @@ Semitone melodic intervals which correpond to chromatic motion are shown in red.
 ## Rhythmic value variability & chromatic motion
 Semitone melodic intervals which correspond to chromatic motion are shown in red.
 
-|↓More rhythmic value variability↓|→More chromatic motion→||
+|↓Increase rhythmic value variability↓|→Increase chromatic motion→||
 |:-:|:-:|:-:|
 |<img src="figs/double_attributes/rhythm_chrom/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/double_attributes/rhythm_chrom/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/double_attributes/rhythm_chrom/reels_simple_chords_418.mid_2_0_demo_Rhythmic_Value_Variability_-1.2663_Chromatic_Motion_0.42178.png"><br><audio controls><source src="mp3/double_attributes/rhythm_chrom/reels_simple_chords_418.mid_2_0_demo_Rhythmic_Value_Variability_-1.2663_Chromatic_Motion_0.42178.mp3"></audio>|<img src="figs/double_attributes/rhythm_chrom/reels_simple_chords_418.mid_2_0_demo_Rhythmic_Value_Variability_-1.2663_Chromatic_Motion_1.4218.png"><br><audio controls><source src="mp3/double_attributes/rhythm_chrom/reels_simple_chords_418.mid_2_0_demo_Rhythmic_Value_Variability_-1.2663_Chromatic_Motion_1.4218.mp3"></audio>|
 |<img src="figs/double_attributes/rhythm_chrom/reels_simple_chords_418.mid_2_0_demo_Rhythmic_Value_Variability_-0.26632_Chromatic_Motion_-0.57822.png"><br><audio controls><source src="mp3/double_attributes/rhythm_chrom/reels_simple_chords_418.mid_2_0_demo_Rhythmic_Value_Variability_-0.26632_Chromatic_Motion_-0.57822.mp3"></audio>|<img src="figs/double_attributes/rhythm_chrom/reels_simple_chords_418.mid_2_0_demo_Rhythmic_Value_Variability_-0.26632_Chromatic_Motion_0.42178.png"><br><audio controls><source src="mp3/double_attributes/rhythm_chrom/reels_simple_chords_418.mid_2_0_demo_Rhythmic_Value_Variability_-0.26632_Chromatic_Motion_0.42178.mp3"></audio>|<img src="figs/double_attributes/rhythm_chrom/reels_simple_chords_418.mid_2_0_demo_Rhythmic_Value_Variability_-0.26632_Chromatic_Motion_1.4218.png"><br><audio controls><source src="mp3/double_attributes/rhythm_chrom/reels_simple_chords_418.mid_2_0_demo_Rhythmic_Value_Variability_-0.26632_Chromatic_Motion_1.4218.mp3"></audio>|

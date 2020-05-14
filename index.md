@@ -3,14 +3,17 @@
 
 # Overview
 Our method allows to learn continuous high-level controls from simple annotations in symbolic music generation.
-In this page, we show additional experimental results for 13 attributes, audio samples and feature 
-explanations from the official [webpage](http://jmir.sourceforge.net/manuals/jSymbolic_manual/home.html). 
+In this page, we show additional experimental results for 13 attributes from jSymbolic along with audio samples and feature 
+descriptions from the official [webpage](http://jmir.sourceforge.net/manuals/jSymbolic_manual/home.html). 
 
 - [Single attribute](#single-attribute)
 - [Double attributes](#double-attributes)
-- [Triple attribute](#triple-attributes)
+- [Triple attributes](#triple-attributes)
 
 # Single attribute
+In this settnig, only one attribute is trained at the same time. 
+The left score is the original data in each attribute.
+
 ## Total number of notes
 Total number of notes, including both pitched and unpitched notes.
 
@@ -58,7 +61,7 @@ Skewness of the MIDI pitches of all pitched notes in the piece. Provides a measu
 distribution is to either the left or the right of the mean pitch. A value of zero indicates no skew.
 
 As we showed the results in the paper, this attribute is relatively difficult to train.
-In this example, the pitch skewness of the results decreases although we add the attribute to increase it.
+In this example, the pitch skewness of the results decreases although we increase the values of attribute condition.
 
 ||→Increase pitch skewness→||
 |:-:|:-:|:-:|
@@ -70,7 +73,7 @@ The fraction of all notes that have a rhythmic value corresponding to the most c
 This calculation includes both pitched and unpitched notes, is calculated after rhythmic quantization, is not influenced 
 by tempo, and is calculated without regard to the dynamics, voice or instrument of any given note.
 
-The most common rhythmic value is 8th note. The notes that are NOT 8th notes are shown in red.
+The most common rhythmic value is 8th note in this example. The notes that are NOT 8th notes are shown in red.
 The model is able to decrease the prevalence of 8th notes according to the control.
 
 ||→Decrease the prevalence of 8th notes→||
@@ -103,7 +106,7 @@ Fraction of melodic intervals that are repeated notes, minor thirds, major third
 major sevenths, octaves, minor tenths or major tenths. This is only a very approximate measure of the amount of 
 arpeggiation in the music, of course.
 
-The successive notes whose interval corresponds to definition of `arpeggiation` are shown in red.
+The successive notes whose interval corresponds to definition of "arpeggiation" are shown in red.
 The results show that the model can control this attirbute appropriately.
 
 ||→Decrease amount of arpeggiation→||
@@ -114,7 +117,7 @@ The results show that the model can control this attirbute appropriately.
 ## Chromatic motion
 Fraction of melodic intervals that correspond to a semitone.
 
-Successive notes whose interval is semitone, which correpond to chromatic motion, are shown in red.
+Successive notes whose interval is semitone, which correponds to chromatic motion, are shown in red.
 
 ||→Increase chromatic motion→||
 |:-:|:-:|:-:|
@@ -173,7 +176,7 @@ When the model tries to increase rhythmic value variability while keeping the to
 |<img src="figs/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Rhythmic_Value_Variability_-1.2663.png"><br><audio controls><source src="mp3/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Rhythmic_Value_Variability_-1.2663.mp3"></audio>|<img src="figs/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Rhythmic_Value_Variability_-0.76632.png"><br><audio controls><source src="mp3/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Rhythmic_Value_Variability_-0.76632.mp3"></audio>|<img src="figs/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Rhythmic_Value_Variability_0.73368.png"><br><audio controls><source src="mp3/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Rhythmic_Value_Variability_0.73368.mp3"></audio>|
 
 ## Total number of notes & chromatic motion
-Successive notes whose interval is semitone, which correpond to chromatic motion, are shown in red.
+Successive notes whose interval is semitone, which correponds to chromatic motion, are shown in red.
 Compared to the total number of notes or pitch variability, chromatic motion is difficult to train, but the model can control this attribute mostly.
 
 |↓Reduce total number of notes↓|→Increase chromatic motion→||
@@ -192,7 +195,7 @@ The model can control pitch variability and rhythmic value variability at the sa
 |<img src="figs/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Rhythmic_Value_Variability_-1.2663.png"><br><audio controls><source src="mp3/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Rhythmic_Value_Variability_-1.2663.mp3"></audio>|<img src="figs/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Rhythmic_Value_Variability_-0.26632.png"><br><audio controls><source src="mp3/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Rhythmic_Value_Variability_-0.26632.mp3"></audio>|<img src="figs/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Rhythmic_Value_Variability_0.73368.png"><br><audio controls><source src="mp3/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Rhythmic_Value_Variability_0.73368.mp3"></audio>|
 
 ## Pitch variability & chromatic motion
-Successive notes whose interval is semitone, which correpond to chromatic motion, are shown in red. 
+Successive notes whose interval is semitone, which correponds to chromatic motion, are shown in red. 
 
 |↓Increase pitch variability↓|→Increase chromatic motion→||
 |:-:|:-:|:-:|
@@ -201,7 +204,7 @@ Successive notes whose interval is semitone, which correpond to chromatic motion
 |<img src="figs/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Chromatic_Motion_-0.57822.png"><br><audio controls><source src="mp3/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Chromatic_Motion_-0.57822.mp3"></audio>|<img src="figs/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Chromatic_Motion_0.42178.png"><br><audio controls><source src="mp3/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Chromatic_Motion_0.42178.mp3"></audio>|<img src="figs/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Chromatic_Motion_1.4218.png"><br><audio controls><source src="mp3/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Chromatic_Motion_1.4218.mp3"></audio>|
 
 ## Rhythmic value variability & chromatic motion
-Successive notes whose interval is semitone, which correpond to chromatic motion, are shown in red.
+Successive notes whose interval is semitone, which correponds to chromatic motion, are shown in red.
 
 |↓Increase rhythmic value variability↓|→Increase chromatic motion→||
 |:-:|:-:|:-:|
@@ -212,9 +215,9 @@ Successive notes whose interval is semitone, which correpond to chromatic motion
 # Triple attributes
 In this section, three attributes are trained at the same time.
 
-## Total number of notes, pitch variability & rhythmic value variability
+## Total number of notes, pitch variability, and rhythmic value variability
 
-Our proposed model is able to control three attributes indivisually.
+Our proposed model is able to control three attributes independently.
 
 |Default total number of notes|||
 |:-:|:-:|:-:|

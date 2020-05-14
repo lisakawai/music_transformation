@@ -2,7 +2,7 @@
 
 
 # Overview
-Our method allows to learn continuous high-level controls from simple annotations in symbolic music generation.
+Our method allows learning continuous high-level controls from simple annotations in symbolic music generation.
 In this page, we show additional experimental results for 13 attributes from jSymbolic along with audio samples and feature 
 descriptions from the official [webpage](http://jmir.sourceforge.net/manuals/jSymbolic_manual/home.html). 
 
@@ -11,11 +11,11 @@ descriptions from the official [webpage](http://jmir.sourceforge.net/manuals/jSy
 - [Triple attributes](#triple-attributes)
 
 # Single attribute
-In this settnig, only one attribute is trained at the same time. 
+In this setting, only one attribute is trained at the same time. 
 The left score is the original data in each attribute.
 
 ## Total number of notes
-Total number of notes, including both pitched and unpitched notes.
+The total number of notes, including both pitched and unpitched notes.
 
 ||→Increase total number of notes→||
 |:-:|:-:|:-:|
@@ -23,7 +23,7 @@ Total number of notes, including both pitched and unpitched notes.
 
 
 ## Pitch variability
-Standard deviation of the MIDI pitches of all pitched notes in the piece. Provides a measure of how close the pitches 
+The standard deviation of the MIDI pitches of all pitched notes in the piece. It provides a measure of how close the pitches 
 as a whole are to the mean pitch.
 
 ||→Increase pitch variability→||
@@ -32,12 +32,12 @@ as a whole are to the mean pitch.
 
 
 ## Rhythmic value variability
-Standard deviation of the note durations in quarter notes of all notes in the music. Provides a measure of how close the 
-rhythmic values are to the mean rhythmic value. This calculation includes both pitched and unpitched notes, is 
+The standard deviation of the note durations in quarter notes of all notes in the music. It provides a measure of how close the
+rhythmic values are to the mean rhythmic value. This calculation includes both pitched and unpitched notes, is
 calculated after rhythmic quantization, is not influenced by tempo, and is calculated without regard to the dynamics, 
-voice or instrument of any given note.
+voice, or instrument of any given note.
 
-The model can increase the variety of the note durations according the the attribute control.
+The model can increase the variety of the note durations according to the attribute control.
 
 ||→Increase rhythmic value variability→||
 |:-:|:-:|:-:|
@@ -45,11 +45,11 @@ The model can increase the variety of the note durations according the the attri
 
 
 ## Pitch kurtosis
-Kurtosis of the MIDI pitches of all pitched notes in the piece. Provides a measure of how peaked or flat the pitch 
+The kurtosis of the MIDI pitches of all pitched notes in the piece. It provides a measure of how peaked or flat the pitch 
 distribution is. The higher the kurtosis, the more the pitches are clustered near the mean and the fewer outliers there 
 are.
 
-The results show that the model is able to decrease pitch kurtosis successfully in this example.
+The results show that the model can decrease the pitch kurtosis successfully in this example.
 
 ||→Decrease pitch kurtosis→||
 |:-:|:-:|:-:|
@@ -57,11 +57,11 @@ The results show that the model is able to decrease pitch kurtosis successfully 
 
 
 ##  Pitch skewness
-Skewness of the MIDI pitches of all pitched notes in the piece. Provides a measure of how asymmetrical the pitch 
+The skewness of the MIDI pitches of all pitched notes in the piece. It provides a measure of how asymmetrical the pitch 
 distribution is to either the left or the right of the mean pitch. A value of zero indicates no skew.
 
 As we showed the results in the paper, this attribute is relatively difficult to train.
-In this example, the pitch skewness of the results decreases although we increase the values of attribute condition.
+In this example, the pitch skewness of the results decreases although we increase the values of the attribute condition.
 
 ||→Increase pitch skewness→||
 |:-:|:-:|:-:|
@@ -69,12 +69,12 @@ In this example, the pitch skewness of the results decreases although we increas
 
 
 ## Prevalence of most common rhythmic value
-The fraction of all notes that have a rhythmic value corresponding to the most common rhythmic value in the music. 
-This calculation includes both pitched and unpitched notes, is calculated after rhythmic quantization, is not influenced 
-by tempo, and is calculated without regard to the dynamics, voice or instrument of any given note.
+The fraction of all notes that have a rhythmic value corresponding to the most common rhythmic value. 
+Its calculation includes both pitched and unpitched notes, is calculated after rhythmic quantization, is not influenced 
+by tempo, and is calculated without regard to the dynamics, voice, or instrument of any given note.
 
-The most common rhythmic value is 8th note in this example. The notes that are NOT 8th notes are shown in red.
-The model is able to decrease the prevalence of 8th notes according to the control.
+The most common rhythmic value is the 8th note in this example. The notes that are NOT 8th notes are shown in red.
+The model can decrease the prevalence of 8th notes according to the control.
 
 ||→Decrease the prevalence of 8th notes→||
 |:-:|:-:|:-:|
@@ -82,7 +82,7 @@ The model is able to decrease the prevalence of 8th notes according to the contr
 
 
 ## Average note duration
-Average duration of notes (in seconds).
+The average duration of notes (in seconds).
 
 ||→Decrease average note duration→||
 |:-:|:-:|:-:|
@@ -90,10 +90,10 @@ Average duration of notes (in seconds).
 
 
 ## Note density variability
-How much the note density (average number of notes per second) varies throughout the piece. Takes into account all notes 
-in all voices, including both pitched and unpitched notes. In order to calculate this, the piece is broken into windows 
-of 5 second duration, and the note density of each window is calculated. The final value of this feature is then found 
-by calculating the standard deviation of the note densities of these windows. Set to 0 if there is insufficient music 
+How much the note density (average number of notes per second) varies throughout the piece. It takes into account all notes 
+in all voices, including both pitched and unpitched notes. To calculate this value, the piece is broken into windows 
+of 5-second duration, and the note density of each window is calculated. The final value of this feature is then found 
+by calculating the standard deviation of the note densities of these windows. It is set to 0 if there is insufficient music 
 for more than one window.
 
 ||→Increase note density variability→||
@@ -102,12 +102,12 @@ for more than one window.
 
 
 ## Amount of arpeggiation
-Fraction of melodic intervals that are repeated notes, minor thirds, major thirds, perfect fifths, minor sevenths, 
-major sevenths, octaves, minor tenths or major tenths. This is only a very approximate measure of the amount of 
-arpeggiation in the music, of course.
+The fraction of melodic intervals that are repeated notes, minor thirds, major thirds, perfect fifths, minor sevenths, 
+major sevenths, octaves, minor tenths, or major tenths. This is only a very approximate measure of the amount of 
+arpeggiation in the music.
 
-The successive notes whose interval corresponds to definition of "arpeggiation" are shown in red.
-The results show that the model can control this attirbute appropriately.
+The successive notes whose interval corresponds to the definition of "arpeggiation" are shown in red.
+The results show that the model can control this attribute appropriately.
 
 ||→Decrease amount of arpeggiation→||
 |:-:|:-:|:-:|
@@ -115,9 +115,9 @@ The results show that the model can control this attirbute appropriately.
 
 
 ## Chromatic motion
-Fraction of melodic intervals that correspond to a semitone.
+The fraction of melodic intervals that correspond to a semitone.
 
-Successive notes whose interval is semitone, which correponds to chromatic motion, are shown in red.
+Successive notes whose interval is a semitone, which corresponds to chromatic motion, are shown in red.
 
 ||→Increase chromatic motion→||
 |:-:|:-:|:-:|
@@ -125,17 +125,17 @@ Successive notes whose interval is semitone, which correponds to chromatic motio
 
 
 ## Direction of melodic motion
-Fraction of melodic intervals that are rising in pitch. Set to zero if no rising or falling melodic intervals are found.
+The fraction of melodic intervals that are rising in pitch. It is set to zero if no rising or falling melodic intervals are found.
 
 The rising-pitch intervals are shown in red and the others are in blue.
-The results indicate that the model is successfully change the ratio of direction of melodic motion.
+The results indicate that the model successfully changes the ratio of the direction of melodic motion.
 
 ||→Decrease the rising-pitch intervals→||
 |:-:|:-:|:-:|
 |<img src="figs/single_attribute/Direction_of_Melodic_Motion/ours/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/single_attribute/Direction_of_Melodic_Motion/ours/reels_simple_chords_418.mid_2_0.mp3"></audi>?|<img src="figs/single_attribute/Direction_of_Melodic_Motion/ours/reels_simple_chords_418.mid_2_0_Direction_of_Melodic_Motion_-0.90567.png"><br><audio controls><source src="mp3/single_attribute/Direction_of_Melodic_Motion/ours/reels_simple_chords_418.mid_2_0_Direction_of_Melodic_Motion_-0.90567.mp3"></audio>|<img src="figs/single_attribute/Direction_of_Melodic_Motion/ours/reels_simple_chords_418.mid_2_0_Direction_of_Melodic_Motion_-1.4057.png"><br><audio controls><source src="mp3/single_attribute/Direction_of_Melodic_Motion/ours/reels_simple_chords_418.mid_2_0_Direction_of_Melodic_Motion_-1.4057.mp3"></audio>|
 
 ## Average interval spanned by melodic arcs
-Average melodic interval (in semitones) separating the top note of melodic peaks and the bottom note of adjacent melodic 
+The average melodic interval (in semitones) separating the top note of melodic peaks and the bottom note of adjacent melodic 
 troughs. 
 
 ||→Increase melodic arcs interval span→||
@@ -143,12 +143,12 @@ troughs.
 |<img src="figs/single_attribute/Average_Interval_Spanned_by_Melodic_Arcs/ours/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/single_attribute/Average_Interval_Spanned_by_Melodic_Arcs/ours/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/single_attribute/Average_Interval_Spanned_by_Melodic_Arcs/ours/reels_simple_chords_418.mid_2_0_Average_Interval_Spanned_by_Melodic_Arcs_1.0243.png"><br><audio controls><source src="mp3/single_attribute/Average_Interval_Spanned_by_Melodic_Arcs/ours/reels_simple_chords_418.mid_2_0_Average_Interval_Spanned_by_Melodic_Arcs_1.0243.mp3"></audio>|<img src="figs/single_attribute/Average_Interval_Spanned_by_Melodic_Arcs/ours/reels_simple_chords_418.mid_2_0_Average_Interval_Spanned_by_Melodic_Arcs_1.5243.png"><br><audio controls><source src="mp3/single_attribute/Average_Interval_Spanned_by_Melodic_Arcs/ours/reels_simple_chords_418.mid_2_0_Average_Interval_Spanned_by_Melodic_Arcs_1.5243.mp3"></audio>|
 
 ## Chord duration
-Average duration a chord in units of time corresponding to the duration of an idealized quarter note. A "chord" here is 
+The average duration a chord in units of time corresponding to the duration of an idealized quarter note. A "chord" here is 
 considered to stay the same as long as no new pitch classes are added, and no pitch classes are taken away. 
 This "chord" may consist of any number of pitch classes, even only one. A "chord" is not considered to end if it is
 split by one or more rests (although the rests themselves are not counted in the duration of the "chord").
 
-Since we are using monophonic music in our work, chord duration is closely related to average note duration.
+Since we are using monophonic music in our work, chord duration is closely related to the average note duration.
 
 ||→Increase chord duration→||
 |:-:|:-:|:-:|
@@ -167,7 +167,7 @@ The model can control the total number of notes and pitch variability at the sam
 |<img src="figs/double_attributes/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Pitch_Variability_-1.1705.png"><br><audio controls><source src="mp3/double_attributes/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Pitch_Variability_-1.1705.mp3"></audio>|<img src="figs/double_attributes/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Pitch_Variability_-0.17049.png"><br><audio controls><source src="mp3/double_attributes/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Pitch_Variability_-0.17049.mp3"></audio>|<img src="figs/double_attributes/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Pitch_Variability_0.82951.png"><br><audio controls><source src="mp3/double_attributes/total_pitch/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Pitch_Variability_0.82951.mp3"></audio>|
 
 ## Total number of notes & rhythmic value variability
-When the model tries to increase rhythmic value variability while keeping the total number of notes, it adds longer and shorter notes at the same time to use larger variety of note lengths.
+When the model tries to increase rhythmic value variability while keeping the total number of notes, it adds longer and shorter notes at the same time to use a larger variety of note lengths.
 
 |↓Reduce total number of notes↓|→Increase rhythmic value variability→||
 |:-:|:-:|:-:|
@@ -176,7 +176,7 @@ When the model tries to increase rhythmic value variability while keeping the to
 |<img src="figs/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Rhythmic_Value_Variability_-1.2663.png"><br><audio controls><source src="mp3/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Rhythmic_Value_Variability_-1.2663.mp3"></audio>|<img src="figs/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Rhythmic_Value_Variability_-0.76632.png"><br><audio controls><source src="mp3/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Rhythmic_Value_Variability_-0.76632.mp3"></audio>|<img src="figs/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Rhythmic_Value_Variability_0.73368.png"><br><audio controls><source src="mp3/double_attributes/total_rhythm/reels_simple_chords_418.mid_2_0_demo_Total_Number_of_Notes_-0.67558_Rhythmic_Value_Variability_0.73368.mp3"></audio>|
 
 ## Total number of notes & chromatic motion
-Successive notes whose interval is semitone, which correponds to chromatic motion, are shown in red.
+Successive notes whose interval is a semitone, which corresponds to chromatic motion, are shown in red.
 Compared to the total number of notes or pitch variability, chromatic motion is difficult to train, but the model can control this attribute mostly.
 
 |↓Reduce total number of notes↓|→Increase chromatic motion→||
@@ -195,7 +195,7 @@ The model can control pitch variability and rhythmic value variability at the sa
 |<img src="figs/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Rhythmic_Value_Variability_-1.2663.png"><br><audio controls><source src="mp3/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Rhythmic_Value_Variability_-1.2663.mp3"></audio>|<img src="figs/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Rhythmic_Value_Variability_-0.26632.png"><br><audio controls><source src="mp3/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Rhythmic_Value_Variability_-0.26632.mp3"></audio>|<img src="figs/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Rhythmic_Value_Variability_0.73368.png"><br><audio controls><source src="mp3/double_attributes/pitch_rhythm/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Rhythmic_Value_Variability_0.73368.mp3"></audio>|
 
 ## Pitch variability & chromatic motion
-Successive notes whose interval is semitone, which correponds to chromatic motion, are shown in red. 
+Successive notes whose interval is a semitone, which corresponds to chromatic motion, are shown in red. 
 
 |↓Increase pitch variability↓|→Increase chromatic motion→||
 |:-:|:-:|:-:|
@@ -204,7 +204,7 @@ Successive notes whose interval is semitone, which correponds to chromatic motio
 |<img src="figs/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Chromatic_Motion_-0.57822.png"><br><audio controls><source src="mp3/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Chromatic_Motion_-0.57822.mp3"></audio>|<img src="figs/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Chromatic_Motion_0.42178.png"><br><audio controls><source src="mp3/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Chromatic_Motion_0.42178.mp3"></audio>|<img src="figs/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Chromatic_Motion_1.4218.png"><br><audio controls><source src="mp3/double_attributes/pitch_chrom/reels_simple_chords_418.mid_2_0_demo_Pitch_Variability_0.82951_Chromatic_Motion_1.4218.mp3"></audio>|
 
 ## Rhythmic value variability & chromatic motion
-Successive notes whose interval is semitone, which correponds to chromatic motion, are shown in red.
+Successive notes whose interval is a semitone, which corresponds to chromatic motion, are shown in red.
 
 |↓Increase rhythmic value variability↓|→Increase chromatic motion→||
 |:-:|:-:|:-:|
@@ -217,7 +217,7 @@ In this section, three attributes are trained at the same time.
 
 ## Total number of notes, pitch variability, and rhythmic value variability
 
-Our proposed model is able to control three attributes independently.
+Our proposed model can control three attributes independently.
 
 |Default total number of notes|||
 |:-:|:-:|:-:|

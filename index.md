@@ -33,7 +33,7 @@ as a whole are to the mean pitch.
 
 ## Rhythmic value variability
 The standard deviation of the note durations in quarter notes of all notes in the music. It provides a measure of how close the
-rhythmic values are to the mean rhythmic value. This calculation includes both pitched and unpitched notes, is
+rhythmic values are to the mean rhythmic value. Its calculation includes both pitched and unpitched notes, is
 calculated after rhythmic quantization, is not influenced by tempo, and is calculated without regard to the dynamics, 
 voice, or instrument of any given note.
 

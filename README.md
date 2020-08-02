@@ -1,1 +1,1 @@
-[Project page](https://anonymous-555.github.io/project/) for our paper "Attribute-Aware Deep Music Transformation" in ISMIR 2020.
+[Project page](https://lisakawai.github.io/music_transformation/) for our paper "Attribute-Aware Deep Music Transformation" in ISMIR 2020.

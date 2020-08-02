@@ -2,8 +2,8 @@
 
 
 # Overview
-Our method allows learning continuous high-level controls from simple annotations in symbolic music generation.
-In this page, we show additional experimental results for 13 attributes from jSymbolic along with audio samples and feature 
+Our method allows learning continuous semantic controls from simple annotations in symbolic music generation.
+In this page, we show additional experimental results for 12 attributes from jSymbolic along with audio samples and feature
 descriptions from the official [webpage](http://jmir.sourceforge.net/manuals/jSymbolic_manual/home.html). 
 
 - [Single attribute](#single-attribute)
@@ -17,7 +17,7 @@ The left score is the original data in each attribute.
 ## Total number of notes
 The total number of notes, including both pitched and unpitched notes.
 
-||→Increase total number of notes→||
+||→Reduce total number of notes→||
 |:-:|:-:|:-:|
 |<img src="figs/single_attribute/Total_Number_of_Notes/ours/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/single_attribute/Total_Number_of_Notes/ours/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/single_attribute/Total_Number_of_Notes/ours/reels_simple_chords_418.mid_2_0_Total_Number_of_Notes_-0.17558.png"><br><audio controls><source src="mp3/single_attribute/Total_Number_of_Notes/ours/reels_simple_chords_418.mid_2_0_Total_Number_of_Notes_-0.17558.mp3"></audio>|<img src="figs/single_attribute/Total_Number_of_Notes/ours/reels_simple_chords_418.mid_2_0_Total_Number_of_Notes_-0.67558.png"><br><audio controls><source src="mp3/single_attribute/Total_Number_of_Notes/ours/reels_simple_chords_418.mid_2_0_Total_Number_of_Notes_-0.67558.mp3"></audio>|
 
@@ -84,7 +84,7 @@ The model can decrease the prevalence of 8th notes according to the control.
 ## Average note duration
 The average duration of notes (in seconds).
 
-||→Decrease average note duration→||
+||→Increase average note duration→||
 |:-:|:-:|:-:|
 |<img src="figs/single_attribute/Average_Note_Duration/ours/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/single_attribute/Average_Note_Duration/ours/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/single_attribute/Average_Note_Duration/ours/reels_simple_chords_418.mid_2_0_Average_Note_Duration_-0.45437.png"><br><audio controls><source src="mp3/single_attribute/Average_Note_Duration/ours/reels_simple_chords_418.mid_2_0_Average_Note_Duration_-0.45437.mp3"></audio>|<img src="figs/single_attribute/Average_Note_Duration/ours/reels_simple_chords_418.mid_2_0_Average_Note_Duration_0.54563.png"><br><audio controls><source src="mp3/single_attribute/Average_Note_Duration/ours/reels_simple_chords_418.mid_2_0_Average_Note_Duration_0.54563.mp3"></audio>|
 
@@ -141,18 +141,6 @@ troughs.
 ||→Increase melodic arcs interval span→||
 |:-:|:-:|:-:|
 |<img src="figs/single_attribute/Average_Interval_Spanned_by_Melodic_Arcs/ours/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/single_attribute/Average_Interval_Spanned_by_Melodic_Arcs/ours/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/single_attribute/Average_Interval_Spanned_by_Melodic_Arcs/ours/reels_simple_chords_418.mid_2_0_Average_Interval_Spanned_by_Melodic_Arcs_1.0243.png"><br><audio controls><source src="mp3/single_attribute/Average_Interval_Spanned_by_Melodic_Arcs/ours/reels_simple_chords_418.mid_2_0_Average_Interval_Spanned_by_Melodic_Arcs_1.0243.mp3"></audio>|<img src="figs/single_attribute/Average_Interval_Spanned_by_Melodic_Arcs/ours/reels_simple_chords_418.mid_2_0_Average_Interval_Spanned_by_Melodic_Arcs_1.5243.png"><br><audio controls><source src="mp3/single_attribute/Average_Interval_Spanned_by_Melodic_Arcs/ours/reels_simple_chords_418.mid_2_0_Average_Interval_Spanned_by_Melodic_Arcs_1.5243.mp3"></audio>|
-
-## Chord duration
-The average duration a chord in units of time corresponding to the duration of an idealized quarter note. A "chord" here is 
-considered to stay the same as long as no new pitch classes are added, and no pitch classes are taken away. 
-This "chord" may consist of any number of pitch classes, even only one. A "chord" is not considered to end if it is
-split by one or more rests (although the rests themselves are not counted in the duration of the "chord").
-
-Since we are using monophonic music in our work, chord duration is closely related to the average note duration.
-
-||→Increase chord duration→||
-|:-:|:-:|:-:|
-|<img src="figs/single_attribute/Chord_Duration/ours/reels_simple_chords_418.mid_2_0.png"><br><audio controls><source src="mp3/single_attribute/Chord_Duration/ours/reels_simple_chords_418.mid_2_0.mp3"></audio>|<img src="figs/single_attribute/Chord_Duration/ours/reels_simple_chords_418.mid_2_0_Chord_Duration_-0.45309.png"><br><audio controls><source src="mp3/single_attribute/Chord_Duration/ours/reels_simple_chords_418.mid_2_0_Chord_Duration_-0.45309.mp3"></audio>|<img src="figs/single_attribute/Chord_Duration/ours/reels_simple_chords_418.mid_2_0_Chord_Duration_0.54691.png"><br><audio controls><source src="mp3/single_attribute/Chord_Duration/ours/reels_simple_chords_418.mid_2_0_Chord_Duration_0.54691.mp3"></audio>|
 
 # Double attributes
 In this section, two attributes are trained at the same time. The original data is shown at the top-left in each setting.

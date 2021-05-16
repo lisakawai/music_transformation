@@ -5,6 +5,7 @@
 Our method allows learning continuous semantic controls from simple annotations in symbolic music generation.
 In this page, we show additional experimental results for 12 attributes from jSymbolic along with audio samples and feature
 descriptions from the official [webpage](http://jmir.sourceforge.net/manuals/jSymbolic_manual/home.html). 
+Implementation code is available [here](https://github.com/lisakawai/music_transformation_ismir). 
 
 - [Single attribute](#single-attribute)
 - [Double attributes](#double-attributes)
